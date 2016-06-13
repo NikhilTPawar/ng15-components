@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default navbar-inverse" class="container-fluid">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">At The Movies</a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <a ng-link="['List']">List</a>
+            </li>
+            <li>
+                <a ng-link="['About', 'Location']">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    
+  <ng-outlet></ng-outlet>
+  
+  
+  <accordion>
+      <accordion-panel heading="Panel1">
+        Content for panel 1    
+      </accordion-panel>
+      <accordion-panel heading="Panel 2">
+        Content for panel 2    
+      </accordion-panel>
+ </accordion>
+
+</div>

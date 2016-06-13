@@ -1,0 +1,15 @@
+<table class="table">
+    
+    <tr ng-repeat="movie in m.movies">
+        <td>{{movie.title}}</td>
+        <td>
+            <rating value="movie.rating"
+                    max="5"
+                    set-rating="m.changeRating(movie, value)" />
+                               
+        </td>
+        <td>{{movie.length}}</td>
+    </tr>
+    
+    
+</table>
